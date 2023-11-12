@@ -7,6 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import vtlogo from "../assets/vtlogo.png";
+
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
@@ -49,7 +50,7 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[37px]"
           >
-            I'm a passionate full-stack developer with a B.S. degree in Computer
+            I'm a passionate software developer with a B.S. degree in Computer
             Science from Virginia Tech. My expertise lies in the front-end,
             where I excel in React, HTML, CSS, JavaScript, and TypeScript, and
             on the back-end, I thrive with Node.js, Express, and Java. Databases

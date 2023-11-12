@@ -1,38 +1,34 @@
 import {
-  mobile,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
   sysdef,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   sukhi,
   iloveshare,
+  angular,
+  redux,
+  express,
+  tailwind,
+  aws,
+  csharp,
+  java,
+  nextjs,
+  python,
+  sql,
+  graphql,
+  dotnet,
+  spring,
 } from "../assets";
 import frontend from "../assets/front-end.png";
 import backend from "../assets/web-settings.png";
 import reactnative from "../assets/smartphone.png";
 import ui from "../assets/ui-design.png";
-import java from "../assets/java.png";
-import aws from "../assets/aws.png";
-import sql from "../assets/mysql.png";
-import csharp from "../assets/csharp.png";
 import cv from "../assets/cv.png";
 import pms from "../assets/pms.png";
 import ecm from "../assets/ecm.png";
@@ -83,62 +79,94 @@ const services = [
   },
 ];
 
-const technologies = [
+const skills = [
   {
-    name: "HTML 5",
-    icon: html,
+    imageUrl: html,
+    name: "HTML",
   },
   {
-    name: "CSS 3",
-    icon: css,
+    imageUrl: css,
+    name: "CSS",
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    imageUrl: javascript,
+    name: "Javascript",
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    imageUrl: typescript,
+    name: "Typescript",
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    imageUrl: reactjs,
+    name: "ReactJS",
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    imageUrl: angular,
+    name: "Angular",
   },
   {
+    imageUrl: git,
+    name: "Git",
+  },
+  {
+    imageUrl: mongodb,
     name: "MongoDB",
-    icon: mongodb,
   },
   {
-    name: "SQL",
-    icon: sql,
+    imageUrl: nodejs,
+    name: "Nodejs",
   },
   {
-    name: "Java",
-    icon: java,
+    imageUrl: redux,
+    name: "Redux",
   },
   {
-    name: "Csharp",
-    icon: csharp,
+    imageUrl: tailwind,
+    name: "TailwindCSS",
   },
   {
+    imageUrl: express,
+    name: "Express",
+  },
+  {
+    imageUrl: aws,
     name: "AWS",
-    icon: aws,
   },
   {
-    name: "git",
-    icon: git,
+    imageUrl: csharp,
+    name: "C#",
   },
   {
-    name: "figma",
-    icon: figma,
+    imageUrl: java,
+    name: "Java",
   },
   {
-    name: "docker",
-    icon: docker,
+    imageUrl: docker,
+    name: "Docker",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+  },
+  {
+    imageUrl: python,
+    name: "Python",
+  },
+  {
+    imageUrl: sql,
+    name: "SQL",
+  },
+  {
+    imageUrl: graphql,
+    name: "GraphQL",
+  },
+  {
+    imageUrl: dotnet,
+    name: ".Net",
+  },
+  {
+    imageUrl: spring,
+    name: "Spring",
   },
 ];
 
@@ -206,6 +234,7 @@ const projects = [
     ],
     image: ecm,
     source_code_link: "https://github.com/AndrewJSunwoo/Ecommerce-Website",
+    website_link: "",
   },
   {
     name: "Pharmacy Management System",
@@ -228,6 +257,7 @@ const projects = [
     image: pms,
     source_code_link:
       "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    website_link: "",
   },
   {
     name: "Recipe-Realm",
@@ -249,6 +279,7 @@ const projects = [
     ],
     image: fr,
     source_code_link: "https://github.com/subeom7/recipe-realm",
+    website_link: "",
   },
   {
     name: "Crypto Price Tracker",
@@ -270,6 +301,7 @@ const projects = [
     ],
     image: cr,
     source_code_link: "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
+    website_link: "",
   },
   {
     name: "Eye clicker",
@@ -283,6 +315,7 @@ const projects = [
     ],
     image: et,
     source_code_link: "https://github.com/AndrewJSunwoo/Eye-Tracker",
+    website_link: "",
   },
   {
     name: "Simple Covid-19 App",
@@ -295,6 +328,7 @@ const projects = [
     ],
     image: cv,
     source_code_link: "https://github.com/AndrewJSunwoo/Covid-Data-Tracker",
+    website_link: "",
   },
   {
     name: "Project Management Application",
@@ -320,7 +354,8 @@ const projects = [
     ],
     image: wip,
     source_code_link: "https://github.com/AndrewJSunwoo",
+    website_link: "",
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, skills, experiences, projects };
