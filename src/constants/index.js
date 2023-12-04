@@ -105,16 +105,12 @@ const skills = [
     name: "Angular",
   },
   {
-    imageUrl: git,
-    name: "Git",
+    imageUrl: nextjs,
+    name: "Next.js",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-  },
-  {
-    imageUrl: nodejs,
-    name: "Nodejs",
+    imageUrl: dotnet,
+    name: ".Net",
   },
   {
     imageUrl: redux,
@@ -125,32 +121,16 @@ const skills = [
     name: "TailwindCSS",
   },
   {
+    imageUrl: nodejs,
+    name: "Nodejs",
+  },
+  {
     imageUrl: express,
     name: "Express",
   },
   {
-    imageUrl: aws,
-    name: "AWS",
-  },
-  {
-    imageUrl: csharp,
-    name: "C#",
-  },
-  {
-    imageUrl: java,
-    name: "Java",
-  },
-  {
-    imageUrl: docker,
-    name: "Docker",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-  },
-  {
-    imageUrl: python,
-    name: "Python",
+    imageUrl: spring,
+    name: "Spring",
   },
   {
     imageUrl: sql,
@@ -161,12 +141,32 @@ const skills = [
     name: "GraphQL",
   },
   {
-    imageUrl: dotnet,
-    name: ".Net",
+    imageUrl: mongodb,
+    name: "MongoDB",
   },
   {
-    imageUrl: spring,
-    name: "Spring",
+    imageUrl: java,
+    name: "Java",
+  },
+  {
+    imageUrl: python,
+    name: "Python",
+  },
+  {
+    imageUrl: csharp,
+    name: "C#",
+  },
+  {
+    imageUrl: aws,
+    name: "AWS",
+  },
+  {
+    imageUrl: docker,
+    name: "Docker",
+  },
+  {
+    imageUrl: git,
+    name: "Git",
   },
 ];
 
