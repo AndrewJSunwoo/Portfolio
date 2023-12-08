@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import {
+  cloudProjects,
+  devOpProjects,
+  mobileProjects,
+  softwareProjects,
+  webAppProjects,
+} from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -29,8 +35,10 @@ const ProjectCard = ({
       >
         <div
           className="relative w-full h-[230px]"
-          onClick={() => window.open(website_link, "_blank")}
-          style={{ cursor: "pointer" }}
+          onClick={() =>
+            website_link !== "" && window.open(website_link, "_blank")
+          }
+          style={{ cursor: website_link !== "" && "pointer" }}
         >
           <img
             src={image}
@@ -92,8 +100,43 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>Full Stack Development</h2>
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {webAppProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      {/* <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>Cloud</h2>
+      </motion.div> */}
+      {/* <div className="mt-5 flex flex-wrap gap-7">
+        {cloudProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>DevOp</h2>
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {devOpProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div> */}
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>Software</h2>
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {softwareProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>Mobile Application</h2>
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {mobileProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

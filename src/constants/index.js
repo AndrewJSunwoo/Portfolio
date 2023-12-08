@@ -28,7 +28,7 @@ import {
 import frontend from "../assets/front-end.png";
 import backend from "../assets/web-settings.png";
 import reactnative from "../assets/smartphone.png";
-import ui from "../assets/ui-design.png";
+import cloud from "../assets/cloud.png";
 import cv from "../assets/cv.png";
 import pms from "../assets/pms.png";
 import ecm from "../assets/ecm.png";
@@ -62,11 +62,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Full Stack Developer",
     icon: frontend,
   },
   {
-    title: "Backend Developer",
+    title: "Software Developer",
     icon: backend,
   },
   {
@@ -74,8 +74,8 @@ const services = [
     icon: reactnative,
   },
   {
-    title: "UI / UX Designer",
-    icon: ui,
+    title: "Cloud Engineer",
+    icon: cloud,
   },
 ];
 
@@ -172,44 +172,53 @@ const skills = [
 
 const experiences = [
   {
-    title: "Software Developer Intern",
+    title: "Software Developer, Intern",
     company_name: "Systems Definition Inc",
     icon: sysdef,
     iconBg: "#FFFFFF",
     date: "May 2022 - May 2023",
     points: [
-      "Collaborated in a team to develop a web application that enabled efficient tour roster creation for Fire Department Chiefs and Officers, ensuring precise firefighter staffing data to support safety and accountability efforts at FDNY.",
-      "Developed user-friendly interfaces for fire department officers by implementing new features, using React and TypeScript.",
-      "Leveraged Java proficiency to perform bug fixes and execute library migration on the backend with Spring, optimizing application performance and stability.",
-      "Utilized AGILE methodologies to manage project tasks with Jira, and actively participated in weekly scrum meetings.",
+      "Collaborated in a team to develop EasyStaff®, a web application facilitating efficient tour roster creation for Fire Department Chiefs and Officers, ensuring precise firefighter staffing data to support safety and accountability efforts at FDNY.",
+      "Developed user interfaces for fire department officers, implementing new features using React JS, TypeScript, and Material UI to ensure accurate data representation and enhance the overall user experience.",
+      "Leveraged Java proficiency to address software bugs, execute library migrations, and ensure accurate data transmission to the frontend within a Spring Framework deployed on AWS EC2, enhancing overall system functionality and reliability.",
+      "Implemented efficient data retrieval solutions by leveraging MongoDB and utilizing QueryBuilder, improving database query performance.",
+      "Worked in an agile environment, effectively managing tasks through Jira and participating in two-week sprint cycles.",
+      "Utilized TortoiseGit for version control to ensure efficient collaboration and code management.",
     ],
+    link: "https://www.systemsdefinition.com/",
+    color: "#284785",
   },
   {
-    title: "Web Developer Intern",
+    title: "Web Developer, Intern",
     company_name: "Sukhi",
     icon: sukhi,
     iconBg: "#E6DEDD",
     date: "Mar 2022 - May 2022",
     points: [
       "Worked closely with the senior developer and UI/UX designer to successfully create a company website using Squarespace, while implementing custom CSS and JavaScript to enhance functionality and user experience.",
-      "Website link: https://www.thesukhiproject.com/",
     ],
+    link: "https://www.thesukhiproject.com/",
+    color: "#75A6A9",
   },
   {
-    title: "Software Developer Intern",
+    title: "Software Developer, Intern",
     company_name: "Triangle Works Corporation",
     icon: iloveshare,
     iconBg: "#bb25f6",
     date: "Aug 2021 - Dec 2021",
     points: [
-      "Collaborated in a global, cross-functional Scrum Team to successfully develop a web application for an interactive social live mobile application.",
-      "Assisted the middleware team in establishing efficient connectivity between the application and database, utilizing React and AWS DynamoDB.",
-      "Took a proactive role in contributing to the development of the server-side code utilizing Typescript, while also leading the design of the user interface for the application.",
+      "Collaborated in a cross-functional Scrum Team to successfully develop a web application for the company’s interactive social live mobile application using React JS.",
+      "Assisted the middleware team in optimizing AWS DynamoDB queries and access patterns, contributing to significant improvements in application performance.",
+      "Took a proactive role in contributing to the development of server-side code utilizing Typescript and Apisauce, while debugging errors using AWS CloudWatch and Winston logger for efficient troubleshooting.",
+      "Led the design efforts for the web application using Figma, creating the user interface to achieve a cohesive user experience.",
+      "Managed ticket workflows and logging efficiently with Jira, while contributing to version control through Bitbucket.",
     ],
+    link: "https://www.iloveshareapp.com/",
+    color: "#8A2BE2",
   },
 ];
 
-const projects = [
+const webAppProjects = [
   {
     name: "E-commerce Website",
     description:
@@ -236,6 +245,40 @@ const projects = [
     source_code_link: "https://github.com/AndrewJSunwoo/Ecommerce-Website",
     website_link: "",
   },
+
+  {
+    name: "Project Management Application",
+    description:
+      "A project management web application for streamlined task organization and collaboration.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Asp.Net Core",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Net 7.0,",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: wip,
+    source_code_link: "https://github.com/AndrewJSunwoo",
+    website_link: "",
+  },
+];
+
+const cloudProjects = [];
+
+const devOpProjects = [];
+
+const softwareProjects = [
   {
     name: "Pharmacy Management System",
     description:
@@ -260,6 +303,23 @@ const projects = [
     website_link: "",
   },
   {
+    name: "Eye clicker",
+    description:
+      "A software that enables users to perform screen clicks by simply blinking your eyes.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: et,
+    source_code_link: "https://github.com/AndrewJSunwoo/Eye-Tracker",
+    website_link: "",
+  },
+];
+
+const mobileProjects = [
+  {
     name: "Recipe-Realm",
     description:
       "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
@@ -275,6 +335,10 @@ const projects = [
       {
         name: "Recoil",
         color: "pink-text-gradient",
+      },
+      {
+        name: "AWS Amplify",
+        color: "orange-text-gradient",
       },
     ],
     image: fr,
@@ -304,20 +368,6 @@ const projects = [
     website_link: "",
   },
   {
-    name: "Eye clicker",
-    description:
-      "A software that enables users to perform screen clicks by simply blinking your eyes.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: et,
-    source_code_link: "https://github.com/AndrewJSunwoo/Eye-Tracker",
-    website_link: "",
-  },
-  {
     name: "Simple Covid-19 App",
     description: "A real time Covid-19 tracking iOS application using Swift.",
     tags: [
@@ -330,32 +380,15 @@ const projects = [
     source_code_link: "https://github.com/AndrewJSunwoo/Covid-Data-Tracker",
     website_link: "",
   },
-  {
-    name: "Project Management Application",
-    description:
-      "A project management web application for streamlined task organization and collaboration.",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Asp.Net Core",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Net 7.0,",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "SQL",
-        color: "green-text-gradient",
-      },
-    ],
-    image: wip,
-    source_code_link: "https://github.com/AndrewJSunwoo",
-    website_link: "",
-  },
 ];
 
-export { services, skills, experiences, projects };
+export {
+  services,
+  skills,
+  experiences,
+  webAppProjects,
+  cloudProjects,
+  devOpProjects,
+  softwareProjects,
+  mobileProjects,
+};

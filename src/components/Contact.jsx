@@ -74,13 +74,21 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        <p className={styles.sectionSubText}>
+          Thank you for taking the time to explore my portfolio! I hope you
+          enjoyed discovering my work as much as I enjoyed creating it. Your
+          interest is greatly appreciated. Feel free to get in touch—I'm always
+          open to new opportunities, collaborations, and meaningful
+          conversations. Let's connect and turn ideas into reality. Looking
+          forward to hearing from you!😁
+        </p>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">Name</span>
             <input
               type="text"
               name="name"
@@ -90,7 +98,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            <span className="text-white font-medium mb-4">Email</span>
             <input
               type="email"
               name="email"
@@ -100,7 +108,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">Message</span>
             <textarea
               rows={7}
               name="message"

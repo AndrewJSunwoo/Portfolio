@@ -16,14 +16,18 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#284785",
+        background: experience.color,
         color: "white",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #284785" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div
+          className="flex justify-center items-center w-full h-full"
+          onClick={() => window.open(experience.link, "_blank")}
+          style={{ cursor: "pointer" }}
+        >
           <img
             src={experience.icon}
             alt={experience.company_name}

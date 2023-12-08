@@ -19,14 +19,14 @@ const Hero = () => {
         />
       </div>
       <div
-        className={`absolute inset-0 top-[570px]  max-w-3xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[570px]  max-w-3xl mx-auto ${styles.paddingX} flex justify-center flex-row items-start gap-5`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#F9C406]">Andrew</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Frontend | Backend | Web / Mobile App
+          <p className={`${styles.heroSubText} mt-2 text-white-100 flex justify-center`}>
+            Full-Stack | Software | Mobile | Cloud
           </p>
         </div>
       </div>
