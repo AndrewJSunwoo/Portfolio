@@ -9,7 +9,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prod": "echo \"Add your build command here\"",
+        "postinstall": "node ./node_modules/husky/lib/installer/bin install",
+        "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
+    
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
