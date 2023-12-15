@@ -172,18 +172,31 @@ const skills = [
 
 const experiences = [
   {
+    title: "Founding Engineer / Full Stack Developer, Intern",
+    company_name: "HashedTokens ",
+    icon: hash,
+    iconBg: "#FFFFFF",
+    date: "Aug 2023 - Present",
+    points: [
+      "Building and iteratively refining an OTP SaaS platform aimed at optimizing secure document and link sharing, with plans to gather and incorporate user feedback upon market launch.",
+      "Spearheading the development of a responsive admin web application using React, TypeScript, and Material UI, enabling granular access control and real-time OTP usage data for informed stakeholder decisions.",
+      "Delivering a robust and secure server with Node.js, Express.js, TypeScript, and MongoDB, ensuring secure data storage and enhanced authorization through OAuth authentication with Passport.js.",
+      "Architecting a scalable Go backend server with RESTful API endpoints, leveraging Redis for caching and PostgreSQL for persistent data storage, achieving a 20% data retrieval speed improvement."
+    ],
+    link: "https://www.systemsdefinition.com/",
+    color: "#284785",
+  },
+  {
     title: "Software Developer, Intern",
     company_name: "Systems Definition Inc",
     icon: sysdef,
     iconBg: "#FFFFFF",
     date: "May 2022 - May 2023",
     points: [
-      "Collaborated in a team to develop EasyStaff®, a web application facilitating efficient tour roster creation for Fire Department Chiefs and Officers, ensuring precise firefighter staffing data to support safety and accountability efforts at FDNY.",
-      "Developed user interfaces for fire department officers, implementing new features using React JS, TypeScript, and Material UI to ensure accurate data representation and enhance the overall user experience.",
-      "Leveraged Java proficiency to address software bugs, execute library migrations, and ensure accurate data transmission to the frontend within a Spring Framework deployed on AWS EC2, enhancing overall system functionality and reliability.",
-      "Implemented efficient data retrieval solutions by leveraging MongoDB and utilizing QueryBuilder, improving database query performance.",
-      "Worked in an agile environment, effectively managing tasks through Jira and participating in two-week sprint cycles.",
-      "Utilized TortoiseGit for version control to ensure efficient collaboration and code management.",
+      "Contributed to a cross-functional team developing a web application for U.S. Fire Departments, leveraging React, TypeScript, and Material UI to enhance data visualization and user experience.",
+      "Utilized Java and Spring Framework on AWS EC2 to ensure accurate data transmission and implement library migrations for enhanced system functionality.",
+      "Leveraged querybuilder to streamline data transmission between MongoDB and the backend.",
+      "Proficient in Agile, streamlining workflow through Jira for task management and TortoiseSVN for efficient version control."
     ],
     link: "https://www.systemsdefinition.com/",
     color: "#284785",
@@ -207,11 +220,10 @@ const experiences = [
     iconBg: "#bb25f6",
     date: "Aug 2021 - Dec 2021",
     points: [
-      "Collaborated in a cross-functional Scrum Team to successfully develop a web application for the company’s interactive social live mobile application using React JS.",
-      "Assisted the middleware team in optimizing AWS DynamoDB queries and access patterns, contributing to significant improvements in application performance.",
-      "Took a proactive role in contributing to the development of server-side code utilizing Typescript and Apisauce, while debugging errors using AWS CloudWatch and Winston logger for efficient troubleshooting.",
-      "Led the design efforts for the web application using Figma, creating the user interface to achieve a cohesive user experience.",
-      "Managed ticket workflows and logging efficiently with Jira, while contributing to version control through Bitbucket.",
+      "Designed and developed RESTful APIs in TypeScript within a Scrum Team, utilizing Winston logger and AWS CloudWatch for robust error tracking.",
+      "Improved application responsiveness by optimizing AWS DynamoDB queries and access patterns, resulting in a demonstrably smoother user experience.",
+      "Led the design of the web application using Figma, creating an intuitive and user-friendly interface.",
+      "Streamlined project management and version control through efficient use of Jira and Bitbucket in an Agile environment.",
     ],
     link: "https://www.iloveshareapp.com/",
     color: "#8A2BE2",
@@ -274,9 +286,57 @@ const webAppProjects = [
   },
 ];
 
-const cloudProjects = [];
+const cloudProjects = [
+  {
+    name: "Quote Generator Application",
+    description:
+      "A dynamic Next.js application utilizing AWS Amplify, AppSync, Cognito, Lambda, and DynamoDB, where the app fetches random quotes from an API, seamlessly presenting them in a pop-up card with dynamic backgrounds, all supported by a serverless backend and CI/CD pipeline.",
+    tags: [
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET Framework",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: pms,
+    source_code_link:
+      "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    website_link: "",
+  },
+];
 
-const devOpProjects = [];
+const devOpProjects = [
+  {
+    name: "Pharmacy Management System",
+    description:
+      "A robust Pharmacy Management System with a user-friendly dashboard, enabling efficient management of customers, employees, and products.",
+    tags: [
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET Framework",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: pms,
+    source_code_link:
+      "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    website_link: "",
+  },
+];
 
 const softwareProjects = [
   {

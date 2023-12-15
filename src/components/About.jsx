@@ -50,21 +50,28 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[37px]"
           >
-            I'm a passionate software developer with a B.S. degree in Computer
-            Science from Virginia Tech. My expertise lies in the front-end,
-            where I excel in React, HTML, CSS, JavaScript, and TypeScript, and
-            on the back-end, I thrive with Node.js, Express, and Java. Databases
-            like MongoDB and SQL are well within my comfort zone. Being a quick
-            learner, I'm enthusiastic about collaborating with you to bring
-            exceptional projects to life. Let's embark on this thrilling journey
-            as a dynamic team and create something truly amazing together! 🙌
+            With nearly two years of internship experience under my belt, I'm
+            not just fresh out of college - I'm ready to hit the ground running
+            in the world of software development. My Virginia Tech CS degree
+            equipped me with a strong foundation in the fundamentals, while my
+            internship experiences fueled my passion for building the full stack
+            from front to back. Java, Spring, Node.js, and CI/CD are my
+            companions for crafting robust back-end solutions. React,
+            JavaScript, and TypeScript bring interfaces to life with
+            interactivity and style. MongoDB serves as the reliable data haven,
+            while Terraform and Docker ensure streamlined infrastructure. And if
+            the cloud's your canvas, I'm armed with AWS to make it happen. But
+            beyond the tech stack, I bring a relentless learning spirit, a
+            collaborative mindset, and a can-do attitude. Dive into my
+            portfolio, explore my projects, and let's talk about how we can
+            build something amazing together. 🙌
           </motion.p>
         </div>
         <div width={"450px"}>
           <img
             src={vtlogo}
             width={"350px"}
-            style={{ marginTop: "45px", marginLeft: "20px" }}
+            style={{ marginTop: "90px", marginLeft: "20px" }}
           />
         </div>
       </div>

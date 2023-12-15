@@ -108,10 +108,10 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      {/* <motion.div variants={textVariant()} className="mt-10">
+      <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Cloud</h2>
-      </motion.div> */}
-      {/* <div className="mt-5 flex flex-wrap gap-7">
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
         {cloudProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -123,7 +123,7 @@ const Works = () => {
         {devOpProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div> */}
+      </div>
       <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Software</h2>
       </motion.div>
