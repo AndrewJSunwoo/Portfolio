@@ -26,11 +26,13 @@ import sql from "./tech/sql.png";
 import graphql from "./tech/graphql.png";
 import dotnet from "./tech/dotnet.png";
 import spring from "./tech/spring.png";
+import terra from "./tech/terraform.png";
 
 // Experience
 import sysdef from "./company/systemdeflog.jpg";
 import iloveshare from "./company/iloveshare.jpg";
 import sukhi from "./company/sukhi.png";
+import hash from "./company/hash.jpg";
 
 // School
 import vtech from "./vtlogo.png";
@@ -66,4 +68,6 @@ export {
   tailwind,
   typescript,
   angular,
+  hash,
+  terra,
 };

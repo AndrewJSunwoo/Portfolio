@@ -6,7 +6,6 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import {
-  cloudProjects,
   devOpProjects,
   mobileProjects,
   softwareProjects,
@@ -20,7 +19,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  source_code_links,
   website_link,
 }) => {
   return (
@@ -46,33 +45,35 @@ const ProjectCard = ({
             className="w-full h-full rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+            <div className="flex flex-row">
+              {source_code_links.map((link, index) => (
+                <div
+                  key={index}
+                  onClick={() => window.open(link, "_blank")}
+                  className="black-gradient ml-3 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img
+                    src={github}
+                    alt="source code"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
+            <p key={`${name}-${tag.name}`} className={`text-[15px]`}>
+              ⚪{tag.name}
             </p>
           ))}
+        </div>
+
+        <div className="mt-1">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
       </Tilt>
     </motion.div>
@@ -102,17 +103,13 @@ const Works = () => {
 
       <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Full Stack Development</h2>
+        <h3>
+          These projects are fueling up for deployment - stay tuned for
+          their big debut.
+        </h3>
       </motion.div>
       <div className="mt-5 flex flex-wrap gap-7">
         {webAppProjects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-      <motion.div variants={textVariant()} className="mt-10">
-        <h2 className={`${styles.projectHeadText}`}>Cloud</h2>
-      </motion.div>
-      <div className="mt-5 flex flex-wrap gap-7">
-        {cloudProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

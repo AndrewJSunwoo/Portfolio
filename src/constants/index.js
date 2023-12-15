@@ -9,6 +9,7 @@ import {
   git,
   docker,
   sysdef,
+  hash,
   sukhi,
   iloveshare,
   angular,
@@ -24,6 +25,7 @@ import {
   graphql,
   dotnet,
   spring,
+  terra,
 } from "../assets";
 import frontend from "../assets/front-end.png";
 import backend from "../assets/web-settings.png";
@@ -36,6 +38,8 @@ import cr from "../assets/cr.jpg";
 import fr from "../assets/fr.png";
 import wip from "../assets/wip.png";
 import et from "../assets/et.png";
+import vpc from "../assets/vpc.jpg";
+import cicd from "../assets/cicd.png";
 
 export const navLinks = [
   {
@@ -153,6 +157,10 @@ const skills = [
     name: "Python",
   },
   {
+    imageUrl: terra,
+    name: "Terraform",
+  },
+  {
     imageUrl: csharp,
     name: "C#",
   },
@@ -181,10 +189,10 @@ const experiences = [
       "Building and iteratively refining an OTP SaaS platform aimed at optimizing secure document and link sharing, with plans to gather and incorporate user feedback upon market launch.",
       "Spearheading the development of a responsive admin web application using React, TypeScript, and Material UI, enabling granular access control and real-time OTP usage data for informed stakeholder decisions.",
       "Delivering a robust and secure server with Node.js, Express.js, TypeScript, and MongoDB, ensuring secure data storage and enhanced authorization through OAuth authentication with Passport.js.",
-      "Architecting a scalable Go backend server with RESTful API endpoints, leveraging Redis for caching and PostgreSQL for persistent data storage, achieving a 20% data retrieval speed improvement."
+      "Architecting a scalable Go backend server with RESTful API endpoints, leveraging Redis for caching and PostgreSQL for persistent data storage, achieving a 20% data retrieval speed improvement.",
     ],
-    link: "https://www.systemsdefinition.com/",
-    color: "#284785",
+    link: "https://www.hashedtokens.com/",
+    color: "#9c7417",
   },
   {
     title: "Software Developer, Intern",
@@ -196,7 +204,7 @@ const experiences = [
       "Contributed to a cross-functional team developing a web application for U.S. Fire Departments, leveraging React, TypeScript, and Material UI to enhance data visualization and user experience.",
       "Utilized Java and Spring Framework on AWS EC2 to ensure accurate data transmission and implement library migrations for enhanced system functionality.",
       "Leveraged querybuilder to streamline data transmission between MongoDB and the backend.",
-      "Proficient in Agile, streamlining workflow through Jira for task management and TortoiseSVN for efficient version control."
+      "Proficient in Agile, streamlining workflow through Jira for task management and TortoiseSVN for efficient version control.",
     ],
     link: "https://www.systemsdefinition.com/",
     color: "#284785",
@@ -237,11 +245,11 @@ const webAppProjects = [
       "A fully functional and user-friendly E-Commerce web application using React and Redux for the front-end, providing an intuitive and seamless user experience.",
     tags: [
       {
-        name: "React.js",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
@@ -254,86 +262,183 @@ const webAppProjects = [
       },
     ],
     image: ecm,
-    source_code_link: "https://github.com/AndrewJSunwoo/Ecommerce-Website",
+    source_code_links: ["https://github.com/AndrewJSunwoo/Ecommerce-Website"],
     website_link: "",
   },
-
   {
-    name: "Project Management Application",
+    name: "Student Management System",
     description:
-      "A project management web application for streamlined task organization and collaboration.",
+      "Built a robust student management system leveraging the power of Angular for a dynamic UI and Spring Boot for secure backend architecture. Manage student data, track progress, and empower educational institutions to foster academic excellence.",
     tags: [
       {
-        name: "React.js",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "Asp.Net Core",
+        name: "Spring Boot",
         color: "green-text-gradient",
-      },
-      {
-        name: "Net 7.0,",
-        color: "pink-text-gradient",
       },
       {
         name: "SQL",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
     image: wip,
-    source_code_link: "https://github.com/AndrewJSunwoo",
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/student-management-system",
+    ],
     website_link: "",
   },
-];
-
-const cloudProjects = [
   {
-    name: "Quote Generator Application",
+    name: "Employee Directory App",
     description:
-      "A dynamic Next.js application utilizing AWS Amplify, AppSync, Cognito, Lambda, and DynamoDB, where the app fetches random quotes from an API, seamlessly presenting them in a pop-up card with dynamic backgrounds, all supported by a serverless backend and CI/CD pipeline.",
+      "Designed a centralized employee directory app powered by Angular and Spring Boot for efficient team collaboration. Simplify employee search, access vital information, and foster stronger connections within your organization.",
     tags: [
       {
-        name: "C#",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: ".NET Framework",
-        color: "pink-text-gradient",
+        name: "Spring Boot",
+        color: "green-text-gradient",
       },
       {
         name: "SQL",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
-    image: pms,
-    source_code_link:
-      "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    image: wip,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/employee-directory-app/tree/main",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Blog App",
+    description:
+      "Crafted a captivating blog app utilizing the cutting-edge technology of Next.js. Deliver a seamless user experience with lightning-fast performance, SEO optimization, and dynamic content management, empowering creators to share their stories with the world",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wip,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/student-management-system",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Movie Review App",
+    description:
+      "A movie review app built with React.js for the frontend and Spring Boot for the backend, using MongoDB for data storage.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spring Boot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wip,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/React-Movie_review_app_frontend",
+      "https://github.com/AndrewJSunwoo/React-Movie_review_app_backend",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Expense Tracker",
+    description:
+      "Track every penny, categorize costs, and budget like a pro with my ASP.NET & SQL expense app.",
+    tags: [
+      {
+        name: "Asp.Net Core MVC",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: wip,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/student-management-system",
+    ],
     website_link: "",
   },
 ];
 
 const devOpProjects = [
   {
-    name: "Pharmacy Management System",
+    name: "End-to-End CI/CD Automation",
     description:
-      "A robust Pharmacy Management System with a user-friendly dashboard, enabling efficient management of customers, employees, and products.",
+      "I built a seamless CI/CD pipeline on AWS using Jenkins, Ansible, Docker, and GitHub webhooks. This automated system deploys code changes faster and guarantees consistent environments, empowering development teams to release features with efficiency and confidence.",
     tags: [
       {
-        name: "C#",
-        color: "blue-text-gradient",
+        name: "Jenkins",
+        color: "green-text-gradient",
       },
       {
-        name: ".NET Framework",
-        color: "pink-text-gradient",
+        name: "Ansible",
+        color: "green-text-gradient",
       },
       {
-        name: "SQL",
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GitHub Webhooks",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS EC2",
         color: "green-text-gradient",
       },
     ],
-    image: pms,
-    source_code_link:
-      "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    image: cicd,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/jenkins-cicd-pipeline-aws",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Automated VPC Deployment",
+    description:
+      "I designed and implemented a secure and scalable Virtual Private Cloud (VPC) on AWS using Terraform. This infrastructure as code approach empowers me to manage resources efficiently and adapt to changing demands. Furthermore, integrating GitHub Actions with VPC deployment enables automatic updates on code changes, accelerating development cycles.",
+    tags: [
+      {
+        name: "Terraform",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Github Action",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS VPC",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: vpc,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/vpc-terraform-github-action",
+    ],
     website_link: "",
   },
 ];
@@ -358,8 +463,9 @@ const softwareProjects = [
       },
     ],
     image: pms,
-    source_code_link:
+    source_code_links: [
       "https://github.com/AndrewJSunwoo/Pharmacy-Management-System",
+    ],
     website_link: "",
   },
   {
@@ -373,7 +479,7 @@ const softwareProjects = [
       },
     ],
     image: et,
-    source_code_link: "https://github.com/AndrewJSunwoo/Eye-Tracker",
+    source_code_links: ["https://github.com/AndrewJSunwoo/Eye-Tracker"],
     website_link: "",
   },
 ];
@@ -402,7 +508,7 @@ const mobileProjects = [
       },
     ],
     image: fr,
-    source_code_link: "https://github.com/subeom7/recipe-realm",
+    source_code_links: ["https://github.com/subeom7/recipe-realm"],
     website_link: "",
   },
   {
@@ -424,7 +530,9 @@ const mobileProjects = [
       },
     ],
     image: cr,
-    source_code_link: "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
+    ],
     website_link: "",
   },
   {
@@ -437,7 +545,7 @@ const mobileProjects = [
       },
     ],
     image: cv,
-    source_code_link: "https://github.com/AndrewJSunwoo/Covid-Data-Tracker",
+    source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
     website_link: "",
   },
 ];
@@ -447,7 +555,6 @@ export {
   skills,
   experiences,
   webAppProjects,
-  cloudProjects,
   devOpProjects,
   softwareProjects,
   mobileProjects,
