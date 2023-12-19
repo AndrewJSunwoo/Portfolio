@@ -38,6 +38,9 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[22px] font-bold">
+          {experience.subtitle && experience.subtitle}
+        </h3>
         <p
           className="text-secondary  text-[16px] font-semibold"
           style={{ margin: 0 }}

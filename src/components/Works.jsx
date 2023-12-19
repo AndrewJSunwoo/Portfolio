@@ -104,8 +104,8 @@ const Works = () => {
       <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Full Stack Development</h2>
         <h3>
-          These projects are fueling up for deployment - stay tuned for
-          their big debut.
+          These projects are fueling up for deployment - stay tuned for their
+          big debut.
         </h3>
       </motion.div>
       <div className="mt-5 flex flex-wrap gap-7">
@@ -114,7 +114,7 @@ const Works = () => {
         ))}
       </div>
       <motion.div variants={textVariant()} className="mt-10">
-        <h2 className={`${styles.projectHeadText}`}>DevOp</h2>
+        <h2 className={`${styles.projectHeadText}`}>DevOps</h2>
       </motion.div>
       <div className="mt-5 flex flex-wrap gap-7">
         {devOpProjects.map((project, index) => (

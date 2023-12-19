@@ -180,7 +180,8 @@ const skills = [
 
 const experiences = [
   {
-    title: "Founding Engineer / Full Stack Developer, Intern",
+    title: "Founding Engineer",
+    subtitle: "(Full Stack Developer, Intern)",
     company_name: "HashedTokens ",
     icon: hash,
     iconBg: "#FFFFFF",
