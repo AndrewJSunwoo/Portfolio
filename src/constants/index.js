@@ -31,15 +31,17 @@ import frontend from "../assets/front-end.png";
 import backend from "../assets/web-settings.png";
 import reactnative from "../assets/smartphone.png";
 import cloud from "../assets/cloud.png";
-import cv from "../assets/cv.png";
-import pms from "../assets/pms.png";
-import ecm from "../assets/ecm.png";
-import cr from "../assets/cr.jpg";
-import fr from "../assets/fr.png";
-import wip from "../assets/wip.png";
-import et from "../assets/et.png";
-import vpc from "../assets/vpc.jpg";
-import cicd from "../assets/cicd.png";
+import pms from "../assets/projects/pms.png";
+import et from "../assets/projects/et.png";
+import vpc from "../assets/projects/vpc.jpg";
+import cicd from "../assets/projects/cicd.png";
+import angular_spring from "../assets/projects/angular_spring.png";
+import asp from "../assets/projects/asp.png";
+import mern from "../assets/projects/mern.png";
+import next from "../assets/projects/next.png";
+import react_srping from "../assets/projects/react_spring.png";
+import sns from "../assets/projects/sns.png";
+import polly from "../assets/projects/polly.jpg";
 
 export const navLinks = [
   {
@@ -55,8 +57,8 @@ export const navLinks = [
     title: "Skills",
   },
   {
-    id: "project",
-    title: "Project",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -72,10 +74,6 @@ const services = [
   {
     title: "Software Developer",
     icon: backend,
-  },
-  {
-    title: "Mobile App Developer",
-    icon: reactnative,
   },
   {
     title: "Cloud Engineer",
@@ -262,32 +260,8 @@ const webAppProjects = [
         color: "green-text-gradient",
       },
     ],
-    image: ecm,
+    image: mern,
     source_code_links: ["https://github.com/AndrewJSunwoo/Ecommerce-Website"],
-    website_link: "",
-  },
-  {
-    name: "Student Management System",
-    description:
-      "Built a robust student management system leveraging the power of Angular for a dynamic UI and Spring Boot for secure backend architecture. Manage student data, track progress, and empower educational institutions to foster academic excellence.",
-    tags: [
-      {
-        name: "Angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Spring Boot",
-        color: "green-text-gradient",
-      },
-      {
-        name: "SQL",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: wip,
-    source_code_links: [
-      "https://github.com/AndrewJSunwoo/student-management-system",
-    ],
     website_link: "",
   },
   {
@@ -308,10 +282,8 @@ const webAppProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: wip,
-    source_code_links: [
-      "https://github.com/AndrewJSunwoo/employee-directory-app/tree/main",
-    ],
+    image: angular_spring,
+    source_code_links: [],
     website_link: "",
   },
   {
@@ -332,7 +304,7 @@ const webAppProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: wip,
+    image: next,
     source_code_links: [
       "https://github.com/AndrewJSunwoo/student-management-system",
     ],
@@ -356,7 +328,7 @@ const webAppProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: wip,
+    image: react_srping,
     source_code_links: [
       "https://github.com/AndrewJSunwoo/React-Movie_review_app_frontend",
       "https://github.com/AndrewJSunwoo/React-Movie_review_app_backend",
@@ -377,9 +349,64 @@ const webAppProjects = [
         color: "blue-text-gradient",
       },
     ],
-    image: wip,
+    image: asp,
     source_code_links: [
       "https://github.com/AndrewJSunwoo/student-management-system",
+    ],
+    website_link: "",
+  },
+];
+
+const cloudProjects = [
+  {
+    name: "File Upload Notifier",
+    description:
+      "A file upload notifier project leveraging Amazon S3, Lambda, and SNS for seamless event-driven communication in a cloud-based environment",
+    tags: [
+      {
+        name: "S3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Lambda",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SNS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: sns,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/AWS-S3_file_upload_notifier_lambda",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Prompt Reader",
+    description:
+      "A Polly prompt reader project utilizing Amazon Polly, S3, and Lambda to convert text prompts into spoken audio files for enhanced accessibility and communication",
+    tags: [
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS Polly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "S3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Lambda",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: polly,
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/AWS-polly_prompt_reader",
     ],
     website_link: "",
   },
@@ -485,71 +512,71 @@ const softwareProjects = [
   },
 ];
 
-const mobileProjects = [
-  {
-    name: "Recipe-Realm",
-    description:
-      "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Expo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Recoil",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "AWS Amplify",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: fr,
-    source_code_links: ["https://github.com/subeom7/recipe-realm"],
-    website_link: "",
-  },
-  {
-    name: "Crypto Price Tracker",
-    description:
-      "A crypto price tracking mobile application that alerts live prices and the market cap.",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Expo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "AWS Amplify",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: cr,
-    source_code_links: [
-      "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
-    ],
-    website_link: "",
-  },
-  {
-    name: "Simple Covid-19 App",
-    description: "A real time Covid-19 tracking iOS application using Swift.",
-    tags: [
-      {
-        name: "Swift",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: cv,
-    source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
-    website_link: "",
-  },
-];
+// const mobileProjects = [
+//   {
+//     name: "Recipe-Realm",
+//     description:
+//       "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
+//     tags: [
+//       {
+//         name: "React Native",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "Expo",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "Recoil",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "AWS Amplify",
+//         color: "orange-text-gradient",
+//       },
+//     ],
+//     image: fr,
+//     source_code_links: ["https://github.com/subeom7/recipe-realm"],
+//     website_link: "",
+//   },
+//   {
+//     name: "Crypto Price Tracker",
+//     description:
+//       "A crypto price tracking mobile application that alerts live prices and the market cap.",
+//     tags: [
+//       {
+//         name: "React Native",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "Expo",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "AWS Amplify",
+//         color: "orange-text-gradient",
+//       },
+//     ],
+//     image: cr,
+//     source_code_links: [
+//       "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
+//     ],
+//     website_link: "",
+//   },
+//   {
+//     name: "Simple Covid-19 App",
+//     description: "A real time Covid-19 tracking iOS application using Swift.",
+//     tags: [
+//       {
+//         name: "Swift",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: cv,
+//     source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
+//     website_link: "",
+//   },
+// ];
 
 export {
   services,
@@ -558,5 +585,6 @@ export {
   webAppProjects,
   devOpProjects,
   softwareProjects,
-  mobileProjects,
+  cloudProjects,
+  // mobileProjects,
 };

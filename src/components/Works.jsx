@@ -6,8 +6,9 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import {
+  cloudProjects,
   devOpProjects,
-  mobileProjects,
+  // mobileProjects,
   softwareProjects,
   webAppProjects,
 } from "../constants";
@@ -122,6 +123,14 @@ const Works = () => {
         ))}
       </div>
       <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={`${styles.projectHeadText}`}>Cloud Computing</h2>
+      </motion.div>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {cloudProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Software</h2>
       </motion.div>
       <div className="mt-5 flex flex-wrap gap-7">
@@ -129,16 +138,16 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={textVariant()} className="mt-10">
+      {/* <motion.div variants={textVariant()} className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Mobile Application</h2>
       </motion.div>
       <div className="mt-5 flex flex-wrap gap-7">
         {mobileProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
 
-export default SectionWrapper(Works, "project");
+export default SectionWrapper(Works, "projects");
