@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import vtlogo from "../assets/vtlogo.png";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt className="xs:w-[350px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full p-[1px] rounded-[20px] border-white border-2 "
@@ -25,7 +25,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt="web-development"
-          className="w-16 h-16 object-contain"
+          className="w-20 h-20 object-contain"
         />
 
         <h3 className="text-white text-[20px] font-bold text-center">
