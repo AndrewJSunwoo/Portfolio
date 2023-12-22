@@ -265,28 +265,6 @@ const webAppProjects = [
     website_link: "",
   },
   {
-    name: "Employee Directory App",
-    description:
-      "Designed a centralized employee directory app powered by Angular and Spring Boot for efficient team collaboration. Simplify employee search, access vital information, and foster stronger connections within your organization.",
-    tags: [
-      {
-        name: "Angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Spring Boot",
-        color: "green-text-gradient",
-      },
-      {
-        name: "SQL",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: angular_spring,
-    source_code_links: [],
-    website_link: "",
-  },
-  {
     name: "Blog App",
     description:
       "Crafted a captivating blog app utilizing the cutting-edge technology of Next.js. Deliver a seamless user experience with lightning-fast performance, SEO optimization, and dynamic content management, empowering creators to share their stories with the world",
