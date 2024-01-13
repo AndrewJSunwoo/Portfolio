@@ -42,6 +42,8 @@ import next from "../assets/projects/next.png";
 import react_srping from "../assets/projects/react_spring.png";
 import sns from "../assets/projects/sns.png";
 import polly from "../assets/projects/polly.jpg";
+import aws_dev from "../assets/aws-dev.png";
+import aws_pract from "../assets/aws-pract.png";
 
 export const navLinks = [
   {
@@ -68,16 +70,14 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
-    icon: frontend,
+    title: "AWS Certified Developer – Associate",
+    icon: aws_dev,
+    url: "https://www.credly.com/badges/d3294378-0d73-43b4-81c3-ab9ff09999f6/",
   },
   {
-    title: "Software Developer",
-    icon: backend,
-  },
-  {
-    title: "Cloud Engineer",
-    icon: cloud,
+    title: "AWS Certified Cloud Practitioner",
+    icon: aws_pract,
+    url: "https://www.credly.com/badges/04d1bad4-7c19-4734-bdf7-b788374a9397",
   },
 ];
 
@@ -187,8 +187,8 @@ const experiences = [
     points: [
       "Building and iteratively refining an OTP SaaS platform aimed at optimizing secure document and link sharing, with plans to gather and incorporate user feedback upon market launch.",
       "Spearheading the development of a responsive admin web application using React, TypeScript, and Material UI, enabling granular access control and real-time OTP usage data for informed stakeholder decisions.",
-      "Delivering a robust and secure server with Node.js, Express.js, TypeScript, and MongoDB, ensuring secure data storage and enhanced authorization through OAuth authentication with Passport.js.",
-      "Architecting a scalable Go backend server with RESTful API endpoints, leveraging Redis for caching and PostgreSQL for persistent data storage, achieving a 20% data retrieval speed improvement.",
+      "Delivering a robust and secure server for the admin web application with Node.js, Express, TypeScript, and MongoDB, ensuring secure data storage and enhanced authorization through OAuth authentication with Passport.js.",
+      "Architecting a highly scalable Go server for the core OTP system with RESTful API endpoints, integrating Redis and PostgreSQL for efficient data management, and deploying it seamlessly on AWS using EC2, RDS, and ElasticCache.",
     ],
     link: "https://www.hashedtokens.com/",
     color: "#9c7417",
@@ -201,8 +201,8 @@ const experiences = [
     date: "May 2022 - May 2023",
     points: [
       "Contributed to a cross-functional team developing a web application for U.S. Fire Departments, leveraging React, TypeScript, and Material UI to enhance data visualization and user experience.",
-      "Utilized Java and Spring Framework on AWS EC2 to ensure accurate data transmission and implement library migrations for enhanced system functionality.",
-      "Leveraged querybuilder to streamline data transmission between MongoDB and the backend.",
+      "Utilized comprehensive Java skills to ensure accurate data transmission and effortlessly integrate library migrations within the Spring Framework, optimizing overall system performance.",
+      "Increased system efficiency by optimizing MongoDB queries with queryBuilder, leading to significant performance improvements.",
       "Proficient in Agile, streamlining workflow through Jira for task management and TortoiseSVN for efficient version control.",
     ],
     link: "https://www.systemsdefinition.com/",
@@ -490,71 +490,71 @@ const softwareProjects = [
   },
 ];
 
-// const mobileProjects = [
-//   {
-//     name: "Recipe-Realm",
-//     description:
-//       "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
-//     tags: [
-//       {
-//         name: "React Native",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "Expo",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "Recoil",
-//         color: "pink-text-gradient",
-//       },
-//       {
-//         name: "AWS Amplify",
-//         color: "orange-text-gradient",
-//       },
-//     ],
-//     image: fr,
-//     source_code_links: ["https://github.com/subeom7/recipe-realm"],
-//     website_link: "",
-//   },
-//   {
-//     name: "Crypto Price Tracker",
-//     description:
-//       "A crypto price tracking mobile application that alerts live prices and the market cap.",
-//     tags: [
-//       {
-//         name: "React Native",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "Expo",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "AWS Amplify",
-//         color: "orange-text-gradient",
-//       },
-//     ],
-//     image: cr,
-//     source_code_links: [
-//       "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
-//     ],
-//     website_link: "",
-//   },
-//   {
-//     name: "Simple Covid-19 App",
-//     description: "A real time Covid-19 tracking iOS application using Swift.",
-//     tags: [
-//       {
-//         name: "Swift",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: cv,
-//     source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
-//     website_link: "",
-//   },
-// ];
+const mobileProjects = [
+  {
+    name: "Recipe-Realm",
+    description:
+      "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Recoil",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS Amplify",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: "",
+    source_code_links: ["https://github.com/subeom7/recipe-realm"],
+    website_link: "",
+  },
+  {
+    name: "Crypto Price Tracker",
+    description:
+      "A crypto price tracking mobile application that alerts live prices and the market cap.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Amplify",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: "",
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
+    ],
+    website_link: "",
+  },
+  {
+    name: "Simple Covid-19 App",
+    description: "A real time Covid-19 tracking iOS application using Swift.",
+    tags: [
+      {
+        name: "Swift",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "",
+    source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
+    website_link: "",
+  },
+];
 
 export {
   services,
@@ -564,5 +564,5 @@ export {
   devOpProjects,
   softwareProjects,
   cloudProjects,
-  // mobileProjects,
+  mobileProjects,
 };

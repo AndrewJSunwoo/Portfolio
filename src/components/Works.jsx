@@ -1,14 +1,12 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import {
   cloudProjects,
   devOpProjects,
-  // mobileProjects,
+  mobileProjects,
   softwareProjects,
   webAppProjects,
 } from "../constants";
@@ -24,7 +22,7 @@ const ProjectCard = ({
   website_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -77,20 +75,20 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
+        <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] "
         >
@@ -99,53 +97,53 @@ const Works = () => {
           project, I've included a brief description and links to the GitHub
           repository or demo, so you can explore them easily. Feel free to check
           them out and let me know what you think! 😊
-        </motion.p>
+        </p>
       </div>
 
-      <motion.div variants={textVariant()} className="mt-10">
+      <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Full Stack Development</h2>
         <h3>
           These projects are fueling up for deployment - stay tuned for their
           big debut.
         </h3>
-      </motion.div>
+      </div>
       <div className="mt-5 flex flex-wrap gap-7">
         {webAppProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={textVariant()} className="mt-10">
+      <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>DevOps</h2>
-      </motion.div>
+      </div>
       <div className="mt-5 flex flex-wrap gap-7">
         {devOpProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={textVariant()} className="mt-10">
+      <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Cloud Computing</h2>
-      </motion.div>
+      </div>
       <div className="mt-5 flex flex-wrap gap-7">
         {cloudProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <motion.div variants={textVariant()} className="mt-10">
+      <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Software</h2>
-      </motion.div>
+      </div>
       <div className="mt-5 flex flex-wrap gap-7">
         {softwareProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      {/* <motion.div variants={textVariant()} className="mt-10">
+      <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Mobile Application</h2>
-      </motion.div>
+      </div>
       <div className="mt-5 flex flex-wrap gap-7">
         {mobileProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div> */}
+      </div>
     </>
   );
 };

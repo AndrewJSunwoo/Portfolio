@@ -8,8 +8,8 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import vtlogo from "../assets/vtlogo.png";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[350px] w-full">
+const ServiceCard = ({ index, title, icon, url }) => (
+  <Tilt className="xs:w-[550px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full p-[1px] rounded-[20px] border-white border-2 "
@@ -22,13 +22,10 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-20 h-20 object-contain"
-        />
-
-        <h3 className="text-white text-[20px] font-bold text-center">
+        <a href={url}>
+          <img src={icon} alt="web-development" width={190} />
+        </a>
+        <h3 className="text-white text-[18px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -39,10 +36,10 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      </div>
 
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -50,28 +47,24 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[37px]"
           >
-            With nearly two years of internship experience under my belt, I'm
-            not just fresh out of college - I'm ready to hit the ground running
-            in the world of software development. My Virginia Tech CS degree
-            equipped me with a strong foundation in the fundamentals, while my
-            internship experiences fueled my passion for building the full stack
-            from front to back. Java, Spring, Node.js, and CI/CD are my
-            companions for crafting robust back-end solutions. React,
-            JavaScript, and TypeScript bring interfaces to life with
-            interactivity and style. MongoDB serves as the reliable data haven,
-            while Terraform and Docker ensure streamlined infrastructure. And if
-            the cloud's your canvas, I'm armed with AWS to make it happen. But
-            beyond the tech stack, I bring a relentless learning spirit, a
-            collaborative mindset, and a can-do attitude. Dive into my
-            portfolio, explore my projects, and let's talk about how we can
-            build something amazing together. 🙌
+            Hey✋ This is your friendly neighborhood full-stack dev, fueled by a
+            Virginia Tech CS degree and a passion for building web applications.
+            I juggle both front-end and back-end with ease, and my AWS Certified
+            Developer - Associate badge means I'm no stranger to the cloud. ☁️
+            Currently, I'm the Founding Engineer at HashedTokens, where I'm
+            building an OTP SaaS platform that changes the game for secure
+            document and link sharing. If you're looking for a coding buddy who
+            loves turning ideas into reality, let's connect! We can geek out
+            over APIs, build something awesome, or just chat about the latest
+            tech trends. The possibilities are endless, and the coffee's always
+            on. ☕️
           </motion.p>
         </div>
         <div width={"450px"}>
           <img
             src={vtlogo}
             width={"350px"}
-            style={{ marginTop: "90px", marginLeft: "20px" }}
+            style={{ marginTop: "60px", marginLeft: "20px" }}
           />
         </div>
       </div>

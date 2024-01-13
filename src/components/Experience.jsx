@@ -19,7 +19,7 @@ const ExperienceCard = ({ experience }) => {
         background: experience.color,
         color: "white",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #284785" }}
+      contentArrowStyle={{ borderRight: `7px solid ${experience.color}` }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -66,7 +66,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p
           style={{ marginTop: "35px" }}
           className={`${styles.sectionSubText} text-center`}
@@ -76,7 +76,7 @@ const Experience = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
         </h2>
-      </motion.div>
+      </div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline lineColor="#DCDCDC">

@@ -8,10 +8,10 @@ import { skills } from "../constants";
 const Tech = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>My Skills.</h2>
-      </motion.div>
-      <div className="mt-16 flex flex-wrap gap-12">
+      </div>
+      <motion.div variants={textVariant()} className="mt-16 flex flex-wrap gap-12">
         {skills.map((skill) => (
           <div className="block-container w-20 h-20" key={skill.name}>
             <div className="btn-back rounded-xl" />
@@ -25,7 +25,7 @@ const Tech = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };
