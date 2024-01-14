@@ -37,7 +37,39 @@ import hash from "./company/hash.jpg";
 // School
 import vtech from "./vtlogo.png";
 
+// Projects
+import pms from "../assets/projects/pms.png";
+import et from "../assets/projects/et.png";
+import vpc from "../assets/projects/vpc.jpg";
+import cicd from "../assets/projects/cicd.png";
+import sns from "../assets/projects/sns.png";
+import polly from "../assets/projects/polly.jpg";
+import fr from "../assets/projects/fr.png";
+import cr from "../assets/projects/cr.jpg";
+import cv from "../assets/projects/cv.png";
+import ecm from "../assets/projects/ecm.png";
+import fnc from "../assets/projects/fnc.png";
+import fi from "../assets/projects/fi.png";
+import mv from "../assets/projects/mv.png";
+import pm from "../assets/projects/pm.png";
+import qg from "../assets/projects/qg.png";
+
 export {
+  ecm,
+  qg,
+  pm,
+  mv,
+  fi,
+  et,
+  fnc,
+  fr,
+  cr,
+  cv,
+  sns,
+  polly,
+  vpc,
+  cicd,
+  pms,
   sql,
   graphql,
   dotnet,

@@ -26,22 +26,22 @@ import {
   dotnet,
   spring,
   terra,
+  pms,
+  et,
+  cicd,
+  vpc,
+  polly,
+  sns,
+  fr,
+  cr,
+  cv,
+  ecm,
+  fnc,
+  fi,
+  mv,
+  pm,
+  qg,
 } from "../assets";
-import frontend from "../assets/front-end.png";
-import backend from "../assets/web-settings.png";
-import reactnative from "../assets/smartphone.png";
-import cloud from "../assets/cloud.png";
-import pms from "../assets/projects/pms.png";
-import et from "../assets/projects/et.png";
-import vpc from "../assets/projects/vpc.jpg";
-import cicd from "../assets/projects/cicd.png";
-import angular_spring from "../assets/projects/angular_spring.png";
-import asp from "../assets/projects/asp.png";
-import mern from "../assets/projects/mern.png";
-import next from "../assets/projects/next.png";
-import react_srping from "../assets/projects/react_spring.png";
-import sns from "../assets/projects/sns.png";
-import polly from "../assets/projects/polly.jpg";
 import aws_dev from "../assets/aws-dev.png";
 import aws_pract from "../assets/aws-pract.png";
 
@@ -101,18 +101,6 @@ const skills = [
   {
     imageUrl: reactjs,
     name: "ReactJS",
-  },
-  {
-    imageUrl: angular,
-    name: "Angular",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-  },
-  {
-    imageUrl: dotnet,
-    name: ".Net",
   },
   {
     imageUrl: redux,
@@ -260,32 +248,71 @@ const webAppProjects = [
         color: "green-text-gradient",
       },
     ],
-    image: mern,
+    image: ecm,
     source_code_links: ["https://github.com/AndrewJSunwoo/Ecommerce-Website"],
     website_link: "",
   },
   {
-    name: "Blog App",
+    name: "Finance Dashboard App",
     description:
-      "Crafted a captivating blog app utilizing the cutting-edge technology of Next.js. Deliver a seamless user experience with lightning-fast performance, SEO optimization, and dynamic content management, empowering creators to share their stories with the world",
+      "A comprehensive finance dashboard app using the MERN stack, incorporating TypeScript for type safety, Redux for state management, and MUI for a visually appealing and intuitive user interface.",
     tags: [
       {
-        name: "Next.js",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind",
-        color: "green-text-gradient",
+        name: "Redux",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Node.js",
       },
       {
         name: "MongoDB",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
       },
     ],
-    image: next,
+    image: fnc,
     source_code_links: [
-      "https://github.com/AndrewJSunwoo/student-management-system",
+      "https://github.com/AndrewJSunwoo/MERN-finance-dashboard-app",
     ],
+    website_link: "",
+  },
+  {
+    name: "Facial Recognition",
+    description:
+      "A facial recognition system using AWS Rekognition, Lambda, and DynamoDB to securely authenticate users, featuring a user-friendly React JS frontend and seamless integration with backend services.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "Rekognition",
+      },
+      {
+        name: "Lambda",
+      },
+      {
+        name: "DynamoDB",
+      },
+      {
+        name: "API Gateway",
+      },
+      {
+        name: "S3",
+      },
+    ],
+    image: fi,
+    source_code_links: ["https://github.com/AndrewJSunwoo/Ecommerce-Website"],
     website_link: "",
   },
   {
@@ -306,7 +333,7 @@ const webAppProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: react_srping,
+    image: mv,
     source_code_links: [
       "https://github.com/AndrewJSunwoo/React-Movie_review_app_frontend",
       "https://github.com/AndrewJSunwoo/React-Movie_review_app_backend",
@@ -314,23 +341,57 @@ const webAppProjects = [
     website_link: "",
   },
   {
-    name: "Expense Tracker",
+    name: "Project Management App",
     description:
-      "Track every penny, categorize costs, and budget like a pro with my ASP.NET & SQL expense app.",
+      "A Project Management App integrating React, GraphQL, Node.js, MongoDB, Express, and TailwindCSS for efficient and collaborative project tracking.",
     tags: [
       {
-        name: "Asp.Net Core MVC",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "SQL",
-        color: "blue-text-gradient",
+        name: "GraphQL",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Express",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "TailwindCSS",
       },
     ],
-    image: asp,
+    image: pm,
     source_code_links: [
-      "https://github.com/AndrewJSunwoo/student-management-system",
+      "https://github.com/AndrewJSunwoo/MERN-Project_Management_App",
     ],
+    website_link: "",
+  },
+  {
+    name: "Quote Generator Application",
+    description:
+      "A dynamic quote generator application using Next.js for an engaging user experience, backed by a serverless architecture on AWS Amplify for efficient hosting, scalability, and continuous deployment.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AWS Amplify",
+      },
+      {
+        name: "GraphQL",
+      },
+      {
+        name: "DynamoDB",
+      },
+    ],
+    image: qg,
+    source_code_links: ["https://github.com/AndrewJSunwoo/AWS-quote_generator"],
     website_link: "",
   },
 ];
@@ -513,7 +574,7 @@ const mobileProjects = [
         color: "orange-text-gradient",
       },
     ],
-    image: "",
+    image: fr,
     source_code_links: ["https://github.com/subeom7/recipe-realm"],
     website_link: "",
   },
@@ -535,7 +596,7 @@ const mobileProjects = [
         color: "orange-text-gradient",
       },
     ],
-    image: "",
+    image: cr,
     source_code_links: [
       "https://github.com/AndrewJSunwoo/Crypto-Price-Tracker",
     ],
@@ -550,7 +611,7 @@ const mobileProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    image: cv,
     source_code_links: ["https://github.com/AndrewJSunwoo/Covid-Data-Tracker"],
     website_link: "",
   },
