@@ -312,7 +312,9 @@ const webAppProjects = [
       },
     ],
     image: fi,
-    source_code_links: ["https://github.com/AndrewJSunwoo/Ecommerce-Website"],
+    source_code_links: [
+      "https://github.com/AndrewJSunwoo/AWS-facial_recognition",
+    ],
     website_link: "",
   },
   {
@@ -552,32 +554,6 @@ const softwareProjects = [
 ];
 
 const mobileProjects = [
-  {
-    name: "Recipe-Realm",
-    description:
-      "A recipe platform with AI-driven personalized dish recommendations, enabling easy exploration of global cuisines and tailored recipes. Led a team of 6 students in the capstone project, overseeing all back-end development and AWS implementation.",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Expo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Recoil",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "AWS Amplify",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: fr,
-    source_code_links: ["https://github.com/subeom7/recipe-realm"],
-    website_link: "",
-  },
   {
     name: "Crypto Price Tracker",
     description:

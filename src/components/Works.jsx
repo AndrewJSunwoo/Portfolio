@@ -103,7 +103,7 @@ const Works = () => {
       <div className="mt-10">
         <h2 className={`${styles.projectHeadText}`}>Full Stack Development</h2>
         <h3>
-          These projects are fueling up for deployment - stay tuned for their
+          These projects are fueling up for deployment 🚀 - stay tuned for their
           big debut.
         </h3>
       </div>
