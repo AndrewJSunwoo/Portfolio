@@ -166,14 +166,13 @@ const skills = [
 
 const experiences = [
   {
-    title: "Founding Engineer",
-    subtitle: "(Full Stack Developer, Intern)",
+    title: "Full Stack Developer, Intern",
     company_name: "HashedTokens ",
     icon: hash,
     iconBg: "#FFFFFF",
     date: "Aug 2023 - Present",
     points: [
-      "Building and iteratively refining an OTP SaaS platform aimed at optimizing secure document and link sharing, with plans to gather and incorporate user feedback upon market launch.",
+      "Building and iterating on an OTP SaaS platform for secure document and link sharing, embracing the agility of the startup world.",
       "Spearheading the development of a responsive admin web application using React, TypeScript, and Material UI, enabling granular access control and real-time OTP usage data for informed stakeholder decisions.",
       "Delivering a robust and secure server for the admin web application with Node.js, Express, TypeScript, and MongoDB, ensuring secure data storage and enhanced authorization through OAuth authentication with Passport.js.",
       "Architecting a highly scalable Go server for the core OTP system with RESTful API endpoints, integrating Redis and PostgreSQL for efficient data management, and deploying it seamlessly on AWS using EC2, RDS, and ElasticCache.",
@@ -188,10 +187,11 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "May 2022 - May 2023",
     points: [
-      "Contributed to a cross-functional team developing a web application for U.S. Fire Departments, leveraging React, TypeScript, and Material UI to enhance data visualization and user experience.",
+      "Collaborated with a cross-functional team building a web app for U.S. fire departments that streamlines firefighter scheduling and accountability, ensuring accurate staffing data for enhanced safety and compliance.",
+      "Developed an intuitive frontend with React, TypeScript, and Material UI, designed for seamless firefighter interaction, enhanced data visualization, and streamlined onsite operations.",
       "Utilized comprehensive Java skills to ensure accurate data transmission and effortlessly integrate library migrations within the Spring Framework, optimizing overall system performance.",
       "Increased system efficiency by optimizing MongoDB queries with queryBuilder, leading to significant performance improvements.",
-      "Proficient in Agile, streamlining workflow through Jira for task management and TortoiseSVN for efficient version control.",
+      "Accelerated workflow using Agile methodologies, Jira for task management, and TortoiseSVN for efficient version control.",
     ],
     link: "https://www.systemsdefinition.com/",
     color: "#284785",
@@ -215,8 +215,8 @@ const experiences = [
     iconBg: "#bb25f6",
     date: "Aug 2021 - Dec 2021",
     points: [
-      "Designed and developed RESTful APIs in TypeScript within a Scrum Team, utilizing Winston logger and AWS CloudWatch for robust error tracking.",
-      "Improved application responsiveness by optimizing AWS DynamoDB queries and access patterns, resulting in a demonstrably smoother user experience.",
+      "Thrived in a fast-paced startup environment while designing and building RESTful APIs in TypeScript for a social networking mobile app’s web backend, ensuring high availability and optimal user experience through AWS CloudWatch integration.",
+      "Enhanced application responsiveness by optimizing AWS DynamoDB query operations, leading to a smoother user experience.",
       "Led the design of the web application using Figma, creating an intuitive and user-friendly interface.",
       "Streamlined project management and version control through efficient use of Jira and Bitbucket in an Agile environment.",
     ],
